@@ -62,6 +62,9 @@ export default function Home() {
           Depoimentos
         </h2>
         <Feedbacks />
+        <button className="bg-[#D60F26] hover:bg-[#D60F26]/80 transition text-white px-8 py-4 rounded-md">
+            Marque um Horário Agora
+        </button>
       </section>
       <Footer/>
     </div>

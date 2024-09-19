@@ -12,7 +12,17 @@ export function Feedbacks() {
         <Swiper
             modules={[Navigation]}
             spaceBetween={50}
-            slidesPerView={4}
+            breakpoints={{
+
+                // Quando a tela for >= 1366px
+                1366: {
+                  slidesPerView: 4,
+                },
+                // Quando a tela for >= 1920px
+                1920: {
+                  slidesPerView: 3,
+                },
+              }}
             navigation={true}
             className="flex relative items-center justify-center space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000">
             {objectFeedbacks.map((feedback) => {
