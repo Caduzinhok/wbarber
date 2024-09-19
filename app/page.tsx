@@ -2,6 +2,7 @@
 import { Feedbacks } from "@/components/feedbacks";
 import Navbar from "./navbar";
 import { Services } from "@/components/services";
+import { Footer } from "./footer";
 
 
 export default function Home() {
@@ -38,13 +39,13 @@ export default function Home() {
             Além da alta qualidade dos serviços, a barbearia aposta na originalidade, elegância e estilo moderno para se destacar no mercado.
             Vamos na contramão do estilo tradicional das barbearias. Para a equipe da W. BARBER CLUB, a aparência é uma extensão da personalidade de cada cliente, e seu objetivo é ajudar a promover a confiança e o bem-estar de seus clientes.
           </p>
-          <p className="text-gray-300 text-md font-light w-full text-justify">
+          <p className="text-gray-300 text-sm font-light w-full text-justify font-light">
             Localizado em Rua 28, 476 - St. Marista, Goiânia - GO, 74150-090
           </p>
         </div>
       </section>
 
-      <section className="flex flex-col w-full items-center justify-center h-container-main bg-gradient-servicos space-y-12 px-24">
+      <section className="flex flex-col w-full items-center justify-center h-container-main bg-gradient-servicos space-y-24 px-24">
         <h2 className="text-white text-5xl font-bold">
           Nossos Serviços
         </h2>
@@ -56,58 +57,13 @@ export default function Home() {
           Agendar Agora
         </button>
       </section>
-
-      <section className="gap-12 flex flex-col items-center justify-center bg-gradient-depoimentos h-container-main w-full px-24">
+      <section className="space-y-24 flex flex-col items-center justify-center bg-gradient-depoimentos h-container-depoimentos w-full px-24">
         <h2 className="text-white text-5xl font-bold">
           Depoimentos
         </h2>
         <Feedbacks />
       </section>
-
-      <footer className="flex items-center justify-between py-20 px-24 bg-gradient-footer">
-        <img src="./logo.png" alt="Logo w-barber" className="size-24" />
-        <div className="flex gap-10 justify-start items-start">
-          <div className="text-white space-y-4">
-            <p className="text-2xl text-red-500 font-semibold">
-              Entre em Contato
-            </p>
-
-            <div>
-              <a href="https://wa.me/5562993918303?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20WBarber%20Club." className="flex items-center gap-2">
-                <img src="./whatsapp.png" alt="Whatsapp" className="size-6" />
-                <span>
-                  (62) 99391-8303
-                </span>
-              </a>
-
-            </div>
-
-            <div className="flex items-center gap-2">
-              <img src="./telefone.png" alt="Telefone" className="size-6" />
-              <span>
-                (62) 3645-3970
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <img src="./instagram.png" alt="Instagram" className="size-6" />
-              <span className="font-semibold">
-                @wbarberclub
-              </span>
-            </div>
-          </div>
-
-          <div className="text-white space-y-4">
-            <p className="text-2xl text-red-500 font-semibold">
-              Horário de Funcionamento
-            </p>
-            <p>
-              Segunda a Sexta das 08:00 às 20:00.
-            </p>
-            <p>Sábado - 09 às 18h.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

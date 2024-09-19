@@ -14,11 +14,13 @@ const config: Config = {
         'gradient-sobre': "linear-gradient(0deg, rgba(0,22,60,1) 0%, rgba(13,18,30,1) 100%)",
         'gradient-servicos': 'linear-gradient(0deg, rgba(13,18,30,1) 0%, rgba(0,22,60,1) 100%);',
         'gradient-depoimentos': 'linear-gradient(0deg, rgba(0,22,60,1)  0%, rgba(13,18,30,1) 100%);',
-        'gradient-footer': 'linear-gradient(0deg, rgba(13,18,30,1)  0%,  rgba(0,22,60,1) 100%);',
+        'gradient-footer': 'linear-gradient(0deg, rgba(0,0,0,1)  0%,  rgba(0,22,60,1) 100%);',
       },
       height: {
         "container-main":
           "calc(100vh - 6rem)",
+        "container-depoimentos":
+          "80vh",
       }
     },
   },
