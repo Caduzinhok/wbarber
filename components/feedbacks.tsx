@@ -1,0 +1,35 @@
+import { objectFeedbacks } from "@/data/feedbacks"
+import { CardFeedbacks } from "./cardFeedbacks"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation } from "swiper/modules"
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+export function Feedbacks() {
+    return (
+        <Swiper
+            modules={[Navigation]}
+            spaceBetween={50}
+            slidesPerView={4}
+            navigation={true}
+            className="flex relative items-center justify-center space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000">
+            {objectFeedbacks.map((feedback) => {
+                return ( 
+                    <SwiperSlide
+                        key={feedback.textFeedback}
+                        className="max-w-80"
+                    >
+                        <CardFeedbacks
+                            name={feedback.name}
+                            image={feedback.image}
+                            countStars={feedback.countStars}
+                            textFeedback={feedback.textFeedback}
+                        />
+                    </SwiperSlide>
+                )
+            })}
+        </Swiper>
+    )
+}

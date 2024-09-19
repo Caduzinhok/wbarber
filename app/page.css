@@ -1,0 +1,13 @@
+/* Cor personalizada para os botões de navegação */
+.swiper-button-next, 
+.swiper-button-prev {
+  --swiper-navigation-color: #ffffff; /* Mude para a cor desejada */
+}
+
+.swiper-button-next {
+  --swiper-navigation-size: 40px;
+}
+
+.swiper-button-prev {
+  --swiper-navigation-size: 40px;
+}

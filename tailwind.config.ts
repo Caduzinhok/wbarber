@@ -9,10 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'bg-home': "url('/background.jpg')",
+        'gradient-home': "linear-gradient(180deg, rgba(13,18,30,1) 0%, rgba(13,18,30,0.45) 50%, rgba(13,18,30,1) 100%)",
+        'gradient-sobre': "linear-gradient(0deg, rgba(0,22,60,1) 0%, rgba(13,18,30,1) 100%)",
+        'gradient-servicos': 'linear-gradient(0deg, rgba(13,18,30,1) 0%, rgba(0,22,60,1) 100%);',
+        'gradient-depoimentos': 'linear-gradient(0deg, rgba(0,22,60,1)  0%, rgba(13,18,30,1) 100%);',
+        'gradient-footer': 'linear-gradient(0deg, rgba(13,18,30,1)  0%,  rgba(0,22,60,1) 100%);',
       },
+      height: {
+        "container-main":
+          "calc(100vh - 6rem)",
+      }
     },
   },
   plugins: [],
