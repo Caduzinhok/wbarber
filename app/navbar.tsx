@@ -4,19 +4,19 @@ export default function Navbar() {
             <img src="./logo.png" alt="Logo w-barber" className="size-16" />
             <ul className="flex space-x-10 text-white list-none">
                 <li>
-                    <a href="#" className="text-base font-normal">Sobre</a>
+                    <a href="#Sobre" className="text-base font-normal">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" className="text-base font-normal">Nossos Serviços</a>
+                    <a href="#Nossos_servicos" className="text-base font-normal">Nossos Serviços</a>
                 </li>
                 <li>
-                    <a href="#" className="text-base font-normal">Depoimentos</a>
+                    <a href="#Depoimentos" className="text-base font-normal">Depoimentos</a>
                 </li>
                 <li>
                     <a href="#" className="text-base font-normal">Equipe</a>
                 </li>
                 <li>
-                    <a href="#" className="text-base font-normal">Entre em Contato</a>
+                    <a href="#Contato" className="text-base font-normal">Entre em Contato</a>
                 </li>
             </ul>
             <div className="flex space-x-10 items-center">

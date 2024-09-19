@@ -1,6 +1,6 @@
 export function Footer(){
     return(
-        <footer className="flex items-center justify-between py-20 px-24 bg-gradient-footer">
+        <footer id="Contato" className="flex items-center justify-between py-20 px-24 bg-gradient-footer">
         <img src="./logo.png" alt="Logo w-barber" className="size-24" />
         <div className="flex gap-10 justify-start items-start">
           <div className="text-white space-y-4">

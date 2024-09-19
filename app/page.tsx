@@ -20,12 +20,14 @@ export default function Home() {
           </p>
           <p className="text-xl font-semibold text-white">Segunda a Sábado</p>
           <button className="bg-[#D60F26] hover:bg-[#D60F26]/80 transition text-white px-8 py-4 rounded-md">
-            Agendar Agora
+            <a href="https://wa.me/5562993918303?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20WBarber%20Club.">
+              Agendar Agora
+            </a>
           </button>
         </div>
       </div>
 
-      <section className="bg-gradient-sobre h-container-main grid grid-cols-2 items-center justify-center px-24">
+      <section id="Sobre" className="bg-gradient-sobre h-container-main grid grid-cols-2 items-center justify-center px-24">
         <div className="flex items-center justify-start">
           <img src="./sobre.png" alt="" className="size-3/4" />
         </div>
@@ -45,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col w-full items-center justify-center h-container-main bg-gradient-servicos space-y-24 px-24">
+      <section id="Nossos_servicos" className="flex flex-col w-full items-center justify-center h-container-main bg-gradient-servicos space-y-24 px-24">
         <h2 className="text-white text-5xl font-bold">
           Nossos Serviços
         </h2>
@@ -54,19 +56,24 @@ export default function Home() {
           <Services />
         </div>
         <button className="bg-[#D60F26] hover:bg-[#D60F26]/80 transition text-white px-8 py-4 rounded-md">
-          Agendar Agora
+          <a href="https://wa.me/5562993918303?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20WBarber%20Club.">
+            Agendar Agora
+          </a>
         </button>
       </section>
-      <section className="space-y-24 flex flex-col items-center justify-center bg-gradient-depoimentos h-container-depoimentos w-full px-24">
+
+      <section id="Depoimentos" className="space-y-24 flex flex-col items-center justify-center bg-gradient-depoimentos h-container-depoimentos w-full px-24">
         <h2 className="text-white text-5xl font-bold">
           Depoimentos
         </h2>
         <Feedbacks />
         <button className="bg-[#D60F26] hover:bg-[#D60F26]/80 transition text-white px-8 py-4 rounded-md">
+          <a href="https://wa.me/5562993918303?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20WBarber%20Club.">
             Marque um Horário Agora
+          </a>
         </button>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
