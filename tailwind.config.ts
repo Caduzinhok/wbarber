@@ -19,6 +19,8 @@ const config: Config = {
       height: {
         "container-main":
           "calc(100vh - 6rem)",
+        "container-main-mobile-about":
+          "calc(130vh)",
         "container-depoimentos":
           "80vh",
       }

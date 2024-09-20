@@ -13,7 +13,10 @@ export function Services() {
       spaceBetween={50}
       navigation
       breakpoints={{
-
+        // Quando a tela for >= 640px
+        640: {
+          slidesPerView: 1,
+        },
         // Quando a tela for >= 1366px
         1366: {
           slidesPerView: 4,
@@ -23,14 +26,14 @@ export function Services() {
           slidesPerView: 5,
         },
       }}
-      className="flex w-full items-start justify-start space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000"
+      className="flex w-full items-start justify-start md:space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000"
 
     >
       {objectServices.map((servico) => {
         return (
           <SwiperSlide
             key={servico.name}
-            className="max-w-80"
+            className="md:max-w-80 max-w-full"
           >
             <CardService
               name={servico.name}

@@ -13,7 +13,10 @@ export function Feedbacks() {
             modules={[Navigation]}
             spaceBetween={50}
             breakpoints={{
-
+                // Quando a tela for >= 640px
+                640: {
+                    slidesPerView: 1,
+                  },
                 // Quando a tela for >= 1366px
                 1366: {
                   slidesPerView: 4,
@@ -24,12 +27,12 @@ export function Feedbacks() {
                 },
               }}
             navigation={true}
-            className="flex relative items-center justify-center space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000">
+            className="flex relative items-center justify-center md:space-x-10 max-w-full overflow-hidden scroll-smooth transition-all duration-1000">
             {objectFeedbacks.map((feedback) => {
                 return ( 
                     <SwiperSlide
                         key={feedback.textFeedback}
-                        className="max-w-80"
+                        className="md:max-w-80 max-w-full"
                     >
                         <CardFeedbacks
                             name={feedback.name}
