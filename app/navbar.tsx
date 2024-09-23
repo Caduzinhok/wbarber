@@ -29,7 +29,7 @@ export default function Navbar() {
                     </li>
                 ))}
             </ul>
-            <div className="flex md:space-x-10 space-x-6 items-center">
+            <div className="flex md:space-x-10 space-x-5 items-center">
                 <a href="https://www.instagram.com/wbarberclub/">
                     <img src="./instagram.png" alt="Instagram" className="md:size-10 size-8" />
                 </a>
