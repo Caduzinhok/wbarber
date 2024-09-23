@@ -1,5 +1,4 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { div } from 'framer-motion/client'
 import { MenuIcon } from 'lucide-react'
 
 
@@ -20,18 +19,15 @@ export default function MenuNavbar() {
         <MenuItems
           transition
           anchor="bottom end"
-          className="max-w-max origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
+          className="flex flex-col p-4 max-w-max origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
         >
-          <div className='flex flex-col p-4'>
           {menuObj.map((item) => (
               <MenuItem key={item.name}>
                 <a href={item.href} className=' text-white'>
                   {item.name}
                 </a>
               </MenuItem>
-            ))}
-          </div>
-            
+            ))}            
         </MenuItems>
       </Menu>
   )

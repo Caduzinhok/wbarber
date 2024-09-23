@@ -3,16 +3,18 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export default function Navbar() {
-    const [width, setWidth] = useState<number | undefined>(undefined)
+    const [width, setWidth] = useState<number | undefined>(
+        undefined
+    )
 
     useEffect(() => {
-        if(typeof window === undefined){
+        if(typeof window === 'undefined'){
             return
         }
         const handleResize = () => {
             setWidth(window.innerWidth);
         };
-
+        handleResize()
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);

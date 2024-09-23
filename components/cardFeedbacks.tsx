@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto"
 import { div, img } from "framer-motion/client"
 
 interface CardFeedbacksProps {
@@ -47,9 +48,9 @@ export function CardFeedbacks(props: CardFeedbacksProps) {
 
             <div className="flex space-x-2 items-center">
                 <div className="flex space-x-2 items-center">
-                    {stars().map((star) => {
+                    {stars().map((star, i) => {
                         return (
-                            <img src="estrela.png" alt="Estrela" key={star} className="size-4" />
+                            <img src="estrela.png" alt="Estrela" key={`${star} ${i.toString()}`} className="size-4" />
                         )
                     })}
                 </div>

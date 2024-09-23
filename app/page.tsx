@@ -10,7 +10,7 @@ export default function Home() {
     <div className="max-w-screen w-full overflow-hidden">
       <Navbar />
       <div className="bg-bg-home h-container-main flex flex-col space-y-8 items-center justify-center p-2">
-        <div className="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-home after:z-0 h-container-main top-24"></div>
+        <div className="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-home after:bg-cover after:bg-center after:z-0 h-container-main top-24"></div>
         <div className="relative z-20 flex flex-col space-y-8 items-center justify-center">
           <h2 className="md:text-4xl text-2xl text-white font-bold text-center uppercase leading-normal">
             Onde a elegância do clássico encontra <br /> o seu estilo moderno.
