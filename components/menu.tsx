@@ -13,7 +13,7 @@ export const menuObj = [
 export default function MenuNavbar() {
   return (
       <Menu>
-        <MenuButton className="inline-flex items-center gap-2 py-1.5 px-3 font-semibold focus:outline-none">
+        <MenuButton className="inline-flex items-center gap-2 py-1.5 px-2 font-semibold focus:outline-none">
           <MenuIcon className='size-10 text-white' />
         </MenuButton>
         <MenuItems
@@ -27,7 +27,8 @@ export default function MenuNavbar() {
                   {item.name}
                 </a>
               </MenuItem>
-            ))}            
+            ))}
+            
         </MenuItems>
       </Menu>
   )
