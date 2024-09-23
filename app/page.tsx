@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className="max-w-screen w-full overflow-hidden">
       <Navbar />
-      <div className="bg-bg-home h-container-main flex flex-col space-y-8 items-center justify-center p-2">
-        <div className="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-home after:bg-cover after:bg-center after:z-0 h-container-main top-24"></div>
+      <div className="max-w-full bg-bg-home md:bg-cover md:bg-top bg-auto bg-top h-container-main flex flex-col space-y-8 items-center justify-center p-2">
+        <div className="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-home after:z-0 h-container-main top-24" />
         <div className="relative z-20 flex flex-col space-y-8 items-center justify-center">
           <h2 className="md:text-4xl text-2xl text-white font-bold text-center uppercase leading-normal">
             Onde a elegância do clássico encontra <br /> o seu estilo moderno.
           </h2>
-          <p className="md:text-lg text-xs text-white">
+          <p className="md:text-lg text-xs text-gray-300">
             Segunda a Sexta das 08:00 às 20:00. Sábado - 09 às 18h.
           </p>
           <p className="md:text-xl text-lg font-semibold text-white">Segunda a Sábado</p>
