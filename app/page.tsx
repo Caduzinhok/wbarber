@@ -73,7 +73,6 @@ export default function Home() {
           </a>
         </button>
       </section>
-
       <Footer />
     </div>
   );
